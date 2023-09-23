@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    scroll-behavior: smooth;
+}
+.navbar{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 20px;
+    z-index: 999;
+}
+.navbar >ul{
+    background-color: rgb(255, 255, 255, 0.5);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 5px 10px;
+    border-radius: 40px;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.navbar > ul>li{
+    list-style: none;
+    padding: 5px;
+}
+.navbar > ul >li>a{
+    text-decoration: none;
+    color: black;
+    padding: 30px 15px 0px 15px;
+    text-align: center;
+    font-size: 18px;
+}
+.navbar>ul>li>a>i{
+    font-size: 23px;
+}
+.menu{
+    font-size: large;
+    padding-top: 5px;
+}
+.navbar >ul>li>:hover{
+    color: #FFA800;
+    transition: 0.5s;
+}
+.footer{
+    background-color: #e7bfa9;
+    padding: 30px;
+    display: flex;
+}
+.copyright-footer{
+    width: 50%;
+}
+.copyright-footer>p{
+    margin-bottom: 10px;
+}
+.logo-footer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-footer>img{
+    height: 100px;
+    width: 100px;
+}
+
+.home{
+    background-image:url("./assets/Background\ website2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+.logo{
+    z-index: 1000;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 640px;
+}
+.arrow>a>i{
+    font-size: 65px;
+    color: #FFA800;
+}
+.arrow>a>i:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.logo>a{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.logo >a>img{
+    height: 70px;
+    width: 120px;
+    float: right;
+    position: fixed;
+    top: 0;
+    margin: 25px 35px 25px 0px;
+    padding-right: 40px;
+}
+
+.aboutus{
+    background-color: #ffe4d6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.container-aboutus{
+    align-items: center;
+    display: flex;
+    height: 700px;
+    background : rgb(255, 255, 255, 0.5);
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFA800;
+}
+.tentang{
+    flex: 50%;
+    padding: 30px;
+}
+.tentang>h1{
+    font-size: 45px;    
+    font-weight: 700;
+}
+.tentang>h3{
+    font-size: 35px;
+    margin: 20px;
+    font-weight: 700;
+}
+.tentang>p{
+    font-size: 18px;
+}
+.tentang>img{
+    height: 250px;
+    width: 250px;
+}
+.about-us{
+    padding-top: 25px;
+    font-size: 40px;
+}
+.visi-misi{
+    flex: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.visi-misi>div{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    border-style: solid;
+    border-color: #FFA800;
+}
+.visi-misi >div> h3{
+    font-size: 30px;
+    padding: 10px 10px 0px 10px;
+    font-weight: bolder;
+    margin-top: 16px;
+}
+.visi-misi > .misi >p{
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+.visi-misi > .visi >p{
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.ourteam {
+    background-color: #ffe4d6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    height: fit-content;
+}
+
+.ourteam > .title{
+    text-align: center;
+    padding: 80px 0px 40px 0px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#container-slide{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 560px;
+    width: 470px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.isi-slide>img{
+    width: 370px;
+    height: 490px;
+}
+.isi-slide{
+    text-align: center;
+}
+
+.carousel-caption{
+    font-size: 18px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 137, 2, 0.7);
+    border-radius: 20px;
+    padding: 10px 0px 10px 0px;
+}
+.carousel-caption>h3{
+    margin: 0px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(100%);
+}
+.product{
+    background-color: #ffe4d6;
+    padding: 40px;
+    height: fit-content;
+}
+.product>h1{
+    text-align: center;
+    padding: 80px 0px 20px 0px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.tempat-artikel{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.produk{
+    width: 35%;
+    height: 550px;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 15px;
+    transition: 0.5s box-shadow;
+    padding: 40px 20px 10px 20px;
+}
+
+.gmbr{
+    display: flex;
+    justify-content: center;
+}
+
+.gmbr > a> img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 20px
+}
+
+.produk>div>a{
+    text-decoration: none;
+    color: black;
+}
+.judul{
+    text-align: center;
+    margin: 0px 10px 10px 10px;
+}
+.judul>a>h4{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.judul>a>p{
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.judul>a>h4:hover{
+    color: #ff7b00;
+    transition: 0.3s;
+}
+.produk:hover{
+    box-shadow: 4px 4px 16px #e7bfa9;
+}
+
+.read-more>a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border-style: solid;
+    margin-left: 5px;
+    background-color: white;
+    width: 28%;
+    border-radius: 5px;
+}
+.read-more>a:hover{
+    background-color:#ff7b00;
+    border-color: #ff7b00;
+    color: white;
+}
+
+.product>h3{
+    text-align: center;
+    margin: 30px 0px 50px 0px; 
+    font-size: 34px;
+    font-weight: bolder;
+}
+.microblog{
+    background-color: #ffe4d6;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0px 50px;
+}
+#container-blog{
+    margin-top: 50px;
+    height: 600px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.isi-blog>img{
+    height: 500px;
+    width: 440px;
+}
+.caption{
+    width: 50%;
+    padding: 25px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 45px;
+}
+.contactus {
+    background-color: #ffe4d6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 820px;
+}
+.contact-us{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+.contactus>form{
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 40%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    border-style: solid;
+    border-color: #FFA800;
+}
+
+.contactus>form>div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.contactus>form>div>input{
+    padding: 5px 8px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFA800;
+    margin-top: 10px;
+}
+
+.contactus>form>div>textarea{
+    padding: 5px 8px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFA800;
+    margin-top: 10px;
+}
+
+.contactus > form>input{
+    border-radius: 10px;
+    color: #FFA800;
+    border-color: #FFA800;
+    background-color: white;
+    padding: 5px;
+    border-style:solid;
+    margin-top: 10px;
+}
+.contactus > form>input:hover{
+    background-color: #FFA800;
+    color: #F4E7FF;
+}
+.contactus>form>div>input:focus , .contactus>form>div>textarea:focus{
+    stroke: none;
+    outline: none;
+}
+
+@media screen and (max-width: 1320px){
+    .produk{
+        height: 600px;
+    }
+    
+}
+@media screen and (max-width: 1120px) {
+    .container-aboutus{
+        height: 800px;
+    }
+    .contactus>form{
+        width: 50%;
+    }
+    .produk{
+        width: 70%;
+        height: 500px;
+        margin-bottom: 60px;
+    }
+    .caption{
+        margin: auto;
+        width: 55%;
+    }
+}
+@media screen and (max-width: 950px){
+    .contactus>form{
+        width: 60%;
+    }
+    .caption{
+        width: 65%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 840px){
+    .container-aboutus{
+        height: 930px;
+    }
+    .caption{
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+}
